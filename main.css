@@ -9,7 +9,7 @@ body {
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   height: 100vh;
   width: 100vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .logo {
@@ -43,14 +43,13 @@ nav a {
   font-size: 1.2rem;
   text-decoration: none;
   display: block;
-  border-radius: .1em;
+  border-radius: .2em;
   padding: 10px;
   transition: .2s ease-in-out;
 }
 
 nav a:hover {
   background-color: #575fcf;
-  /* color: #000; */
   transition: .2s ease-in-out;
 }
 
@@ -63,10 +62,108 @@ nav a:hover {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: #1e272e;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
 }
 
 .right-panel {
   background-color: #d2dae2;
   grid-column-start: 4;
   grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
 }
+
+/* Home */
+
+.subheading {
+  color: #FEFEFE;
+  font-size: 3.2rem;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-bottom: 10px;
+}
+
+.subheading.sub-one {
+  color: transparent;
+  animation: 1s ease-in 0s fade-in;
+  animation-fill-mode: forwards;
+}
+
+.subheading.sub-two {
+  color: transparent;
+  animation: 1s ease-in .2s fade-in;
+  animation-fill-mode: forwards;
+}
+
+.subheading.sub-three {
+  color: transparent;
+  animation: 1s ease-in .5s fade-in;
+  animation-fill-mode: forwards;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail.th-one {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #0fbcf9;
+}
+
+.thumbnail.th-two {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #ffc048;
+}
+
+.thumbnail.th-three {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #ff5e57;
+}
+
+.thumbnail.th-four {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #05c46b;
+}
+
+.thumbnail.th-five {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #00d8d6;
+}
+
+.thumbnail.th-six {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: #ef5777;
+}
+
+.thumbnail-info {
+  font-size: 1.2rem;
+}
+
+@keyframes fade-in { from { color: transparent; } to { color: #FEFEFE; } }
+
+

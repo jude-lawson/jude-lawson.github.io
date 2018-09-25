@@ -9,12 +9,14 @@ body {
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   height: 100vh;
   width: 100vw;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
   font-family: 'Poiret One', cursive;
   color: #FEFEFE;
   font-size: 2.5rem;
+  text-decoration: none;
 }
 
 header {
@@ -39,6 +41,17 @@ nav {
 nav a {
   color: #FEFEFE;
   font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+  border-radius: .1em;
+  padding: 10px;
+  transition: .2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #575fcf;
+  /* color: #000; */
+  transition: .2s ease-in-out;
 }
 
 .left-panel, .right-panel {

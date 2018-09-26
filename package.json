@@ -1,0 +1,17 @@
+{
+  "name": "jude-lawson.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "main": "main.js",
+  "repository": "git@github.com:jude-lawson/jude-lawson.github.io.git",
+  "author": "Jude Lawson <lawsonjdutton@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "start:dev": "webpack-dev-server"
+  }
+}

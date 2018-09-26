@@ -78,6 +78,37 @@ nav a:hover {
   grid-template-rows: 33.33% 33.33% 33.33%;
 }
 
+span.js {
+  background-color: #F5DF4F;
+  padding: 0 5px;
+}
+
+span.css {
+  background-color: #3267E9;
+  padding: 0 5px;
+}
+
+span.html {
+  background-color: #E16D3C;
+  padding: 0 5px;
+}
+
+span.reactjs {
+  background-color: #7FD8F7;
+  padding: 0 5px;
+}
+
+span.elixir {
+  background-color: #4C2964;
+  color: #FEFEFE;
+  padding: 0 5px;
+}
+
+span.phoenix {
+  background-color: #DF5F36;
+  padding: 0 5px;
+}
+
 /* Home */
 
 .subheading {
@@ -195,7 +226,7 @@ h4.subtitle {
 
 /* Magic Carpet */
 
-main#magic-carpet-main {
+main#magic-carpet-main, main#about-main {
   background-color: #d2dae2;
   grid-column-start: 1;
   grid-column-end: 6;
@@ -225,12 +256,12 @@ main#magic-carpet-main {
   grid-template-rows: repeat(10, 10%);
 }
 
-#magic-carpet-main h1 {
+#magic-carpet-main h1, #about-main h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
-#magic-carpet-main article {
+#magic-carpet-main article, #about-main article {
   font-family: 'Open Sans', sans-serif;
   margin: 20px 20px 0 10px;
   grid-column-start: 1;
@@ -239,15 +270,15 @@ main#magic-carpet-main {
   grid-row-end: 11;
 }
 
-#magic-carpet-main p {
+#magic-carpet-main p, #about-main p {
   margin-bottom: 10px;
 }
 
-#magic-carpet-main h1, #magic-carpet-main h2, #magic-carpet-main h3 {
+#magic-carpet-main h1, #magic-carpet-main h2, #magic-carpet-main h3, #about-main h1, #about-main h2, #about-main h3 {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-#magic-carpet-main h3 {
+#magic-carpet-main h3, #about-main h3 {
   margin: 20px 0 10px;
   padding-left: 8px;
 }
@@ -264,13 +295,13 @@ main#magic-carpet-main {
   border-left: 4px solid #05c46b;
 }
 
-#magic-carpet-main .image-container {
+#magic-carpet-main .image-container, #about-main .image-container {
   grid-column-start: 7;
   width: 450px;
   min-height: 800px;
 }
 
-.image-container img {
+#magic-carpet-main .image-container img {
   max-width: 100%;
   min-width: 100%;
   max-height: 100%;
@@ -279,8 +310,19 @@ main#magic-carpet-main {
 
 /* About */
 
-#about-page-profile-pic {
-  grid-row-start: 1;
+#about-main .image-container img {
+  border-radius: 50%;
+  height: 400px;
   width: 400px;
-  transform: rotate(-90deg)
+}
+
+#about-main .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-main .image-container a {
+  margin-top: 20px;
 }

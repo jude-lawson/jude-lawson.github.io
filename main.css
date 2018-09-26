@@ -35,7 +35,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 35%;
+  width: 25%;
 }
 
 nav a {
@@ -176,6 +176,21 @@ h4.subtitle {
   font-style: italic;
   font-size: .8rem;
   margin-top: 8px;
+}
+
+.whoops-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 5;
+  grid-column-start: 3;
+  font-size: 1.3rem;
+}
+
+.whoops-container a {
+  display: block;
+  margin-top: 12px;
 }
 
 /* Magic Carpet */

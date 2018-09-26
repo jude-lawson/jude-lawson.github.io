@@ -8,21 +8,40 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One|Ubuntu+Mono" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
 </head>
 <body>
   <header>
     <a href='/' class='logo'>Jude Dutton</a>
     <nav>
       <a href="/">Home</a>
-      <a href="/projects">Projects</a>
+      <!-- <a href="/projects">Projects</a> -->
       <a href="/about">About</a>
       <a href="/contact">Contact</a>
     </nav>
   </header>
   <main id='magic-carpet-main'>
-    <div class='vignette vignette-one'></div>
-    <div class='vignette vignette-two'></div>
+    <div class='vignette vignette-one'>
+      <article>
+        <h1>Magic Carpet</h1>
+        <h2>An Automatic Adventure App</h2>
+        <h4 class='subtitle'>By: Jude Dutton, <a href='https://github.com/zdcthomas'>Zach Thomas</a>, and <a href='https://github.com/hmesander'>Haley Mesander</a></h4>
+        <h3>Summary</h3>
+        <p>Magic carpet is a mobile-forst application that solves one problem: "Where should we go to eat?". Magic Carpet will randomly select a nearby restaurant for you and, keeping the choice of destination a surprise, call a ride for you to get there.</p>
+        <p>Right now, the application is a web app designed to appear on mobile devices specifically, but can be used on laptop and desktop computers as well. The app can also cancel the ride for you if necessary</p>
+
+        <h3>Future Iterations</h3>
+        <p>Creating a settings panel is currently a work-in-progress. We would like for the user to be able to adjust how far they would like to search, how much money they would like to spend when they get there, and choose the rating-level for their destination.</p>
+        <p>Magic Carpet will enhance its ride experience by keeping track of the ride share service's progress, as well as showing you reviews for your destination while you are in the ride.</p>
+        <p>Magic Carpet will enhance its feature set by adding the ability to choose other events and places beyond restaurants.</p>
+
+        <h3>Our Tech Stack</h3>
+        <p>We are currently powering our app with the Yelp API for restaurant choices and the Lyft API for ride share services. We've built an internal API using Rails that is the hub for our requests and potential future hub for machine learning. Our frontend interface is built with React</p>
+      </article>
+      <div class='image-container'>
+        <img src='imgs/MagicCarpetLogin.png' id='magic-carpet-login-image' alt='Magic Carpet Login Page' />
+      </div>
+    </div>
   </main>
 </body>
+<script src="scripts/magic-carpet.js"></script>
 </html>

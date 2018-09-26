@@ -203,3 +203,11 @@ main#magic-carpet-main {
   grid-column-start: 2;
   grid-column-end: 4;
 }
+
+/* About */
+
+#about-page-profile-pic {
+  grid-row-start: 1;
+  width: 400px;
+  transform: rotate(-90deg)
+}

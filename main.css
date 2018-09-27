@@ -366,6 +366,14 @@ main#magic-carpet-main, main#about-main {
 /* Medium Width */
 
 @media screen and (max-width: 1100px) {
+
+  #magic-carpet-main .image-container {
+    display: none;
+  }
+
+  #magic-carpet-main article {
+    grid-column-end: 11;
+  }
   
   #magic-carpet-main .image-container, #about-main .image-container {
     width: 300px;

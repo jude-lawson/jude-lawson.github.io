@@ -55,7 +55,7 @@ nav a:hover {
 
 .left-panel, .right-panel {
   grid-row-start: 2;
-  grid-row-end: 11;
+  grid-row-end: 10;
 }
 
 .left-panel {
@@ -110,6 +110,37 @@ span.phoenix {
   padding: 0 5px;
   color: #FEFEFE;
 }
+
+footer {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  background-color: #808e9b;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FEFEFE;
+  font-size: 1.2rem;
+  display: block;
+}
+
+footer i {
+  color: #FEFEFE;
+}
+
+footer a:hover {
+  animation: .3s ease-in 0s rainbow-it;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes rainbow-it { from { color: #FEFEFE } to { color: #0be881 } }
 
 /* Home */
 
@@ -455,7 +486,7 @@ main#magic-carpet-main, main#about-main {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 11;
+    grid-row-end: 10;
   }
 
   .thumbnail {
@@ -463,6 +494,10 @@ main#magic-carpet-main, main#about-main {
   }
 
   .thumbnail-info {
+    font-size: .8rem;
+  }
+
+  footer a {
     font-size: .8rem;
   }
 
